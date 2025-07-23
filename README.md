@@ -2,9 +2,8 @@
   <img src="./visuals/Hello.gif" alt="Python Coding" width="600"/>
 </p> <br></br>
 
-
 <details>
-  <summary>📂 Python Basics Cheatsheet </summary>
+  <summary>📂 Python Basics Cheatsheet </summary> <br></br>
 
 # 🐍 Python Basics Cheatsheet 
 > 🚀 Master the essentials of Python – your gateway to automation, web dev, data science, and beyond.
@@ -243,3 +242,149 @@ list(range(3)) → [0, 1, 2]
 ---
 
   </details>
+
+
+
+<details>
+  <summary>📂 Python Data Structures Cheatsheet </summary> <br></br>
+
+  # 🧱 Python Data Structures Cheatsheet 
+
+
+
+> 🎯 Data structures let you store, access, and organize your stuff (like toys, lists, or cards).  
+> They help you **remember things, find them fast, and keep them tidy** when you're coding!
+
+---
+
+## 🧺 1. Lists (A basket that holds items in order — and you can change them!)
+
+```python
+fruits = ["apple", "banana", "mango"]
+```
+
+🧸 This is a **list** — like a toy basket.  
+It has three fruits, and you can do lots of things with it:
+
+```python
+fruits.append("orange")     # Adds "orange" to the basket
+fruits.remove("banana")     # Takes "banana" out
+fruits[0]                   # Gets the first fruit ("apple")
+fruits[1] = "grape"         # Changes second fruit to "grape"
+len(fruits)                 # Counts how many fruits are in the basket
+```
+
+### 🔁 Loop through list (Look at each item one by one)
+
+```python
+for fruit in fruits:
+    print(fruit)
+```
+
+🧸 This prints each fruit one by one like:
+```
+apple  
+grape  
+mango  
+orange  
+```
+
+---
+
+## 📚 2. Tuples (A list you can't change — like a locked box)
+
+```python
+coordinates = (10, 20)
+print(coordinates[0])     # Gets the first number (10)
+```
+
+🧸 Tuples are like **coordinates** on a map.  
+You can look at them, but **you can't change them**.
+
+🔒 Use tuples when your data should stay the same.  
+Example: `(latitude, longitude)`, or sizes like `(width, height)`
+
+---
+
+## 🗃️ 3. Dictionaries (A label-sticker box: each item has a name and a value)
+
+```python
+person = {"name": "Sri", "age": 17}
+```
+
+🧸 This is a dictionary. It’s like a **box where each item has a label**:
+
+```python
+print(person["name"])        # Shows "Sri"
+person["age"] = 18           # Changes age to 18
+person["city"] = "Chennai"   # Adds a new label: "city"
+```
+
+### 🔁 Loop through dictionary (Check all labels and values)
+
+```python
+for key, value in person.items():
+    print(key, value)
+```
+
+🧸 Output:
+```
+name Sri  
+age 18  
+city Chennai
+```
+
+---
+
+## 🔢 4. Sets (A magic bag with only unique things – no duplicates allowed!)
+
+```python
+numbers = {1, 2, 3, 2, 1}
+```
+
+🧸 This bag only keeps **one of each number**, so it becomes:
+```
+{1, 2, 3}
+```
+
+```python
+numbers.add(4)        # Adds number 4
+numbers.remove(2)     # Removes number 2
+```
+
+👀 You can also **check if something’s in the set**:
+
+```python
+if 3 in numbers:
+    print("Found")
+```
+
+🧸 Output:
+```
+Found
+```
+
+---
+
+## 📊 Summary Table
+
+| Type        | Ordered | Can Change? | Allows Duplicates? | Example            |
+|-------------|---------|-------------|---------------------|--------------------|
+| **List**     | ✅ Yes  | ✅ Yes      | ✅ Yes              | `["a", "b", "c"]`  |
+| **Tuple**    | ✅ Yes  | ❌ No       | ✅ Yes              | `(1, 2, 3)`        |
+| **Dictionary** | ✅ Yes (by key) | ✅ Yes | ❌ No (keys must be unique) | `{"key": "value"}` |
+| **Set**      | ❌ No   | ✅ Yes      | ❌ No               | `{1, 2, 3}`        |
+
+---
+
+## 🧠 Pro Tips
+
+- ✅ Use **lists** when you need an **ordered group** of things you want to **change**
+- 🔒 Use **tuples** when the data should **never change**
+- 🏷️ Use **dictionaries** when each value needs a **name or label**
+- 🧹 Use **sets** to **remove duplicates** or **check if something exists**
+
+---
+
+</details>
+
