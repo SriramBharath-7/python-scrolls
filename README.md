@@ -1,3 +1,6 @@
+<details>
+  <summary>📂 Python Basics Cheatsheet </summary>
+
 # 🐍 Python Basics Cheatsheet 
 > 🚀 Master the essentials of Python – your gateway to automation, web dev, data science, and beyond.
 
@@ -234,4 +237,4 @@ list(range(3)) → [0, 1, 2]
 
 ---
 
-
+  </details>
