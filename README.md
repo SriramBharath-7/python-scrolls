@@ -388,3 +388,198 @@ Found
 
 </details>
 
+<details>
+  <summary>📂 Python OOP Cheatsheet </summary> <br></br>
+
+
+# 🧱 Python OOP (Object-Oriented Programming) Cheatsheet
+> 🧠 OOP lets you create your own **blueprints for real things** (like people, animals, cars).  
+> It helps you organize your code and reuse it like LEGO blocks! 🧱
+
+---
+
+## 🧬 1. What is a Class?
+
+A **class** is like a **blueprint** or **recipe**.
+
+```python
+class Dog:
+    pass
+```
+
+🧸 Imagine you’re drawing a “Dog” template — but you haven’t made a real dog yet.
+
+---
+
+## 🐾 2. What is an Object?
+
+An **object** is a **real thing** made from a class.
+
+```python
+my_dog = Dog()
+```
+
+Now you’ve made an actual **dog** using the `Dog` blueprint.  
+You can make as many dogs as you want!
+
+---
+
+## 🎒 3. Attributes (What an object *has*)
+
+```python
+class Dog:
+    def __init__(self, name, age):
+        self.name = name    # Every dog has a name
+        self.age = age      # Every dog has an age
+```
+
+Explanation:
+- `__init__()` is a **special function** that runs when we create a new object
+- `self` is the object itself (think: “this dog”)
+- `self.name` and `self.age` are like labels on that specific dog
+
+---
+
+## 🎯 4. Creating an Object (Using the class)
+
+```python
+dog1 = Dog("Bruno", 3)
+print(dog1.name)  # Bruno
+print(dog1.age)   # 3
+```
+
+Now Bruno is your first dog. You can make more dogs too!
+
+---
+
+## ⚙️ 5. Methods (What an object *can do*)
+
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        print(self.name + " says woof!")
+```
+
+Now every dog can bark!
+
+```python
+dog1 = Dog("Shadow")
+dog1.bark()
+```
+
+🧸 Output:
+```
+Shadow says woof!
+```
+
+---
+
+## 👪 6. Inheritance (Like getting traits from your parents!)
+
+```python
+class Animal:
+    def eat(self):
+        print("This animal eats food.")
+
+class Cat(Animal):
+    def meow(self):
+        print("Meow!")
+```
+
+Now `Cat` can do **everything Animal can do** + its own stuff!
+
+```python
+kitty = Cat()
+kitty.eat()   # From Animal
+kitty.meow()  # From Cat
+```
+
+---
+
+## 🧱 7. Encapsulation (Keep details private!)
+
+```python
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance  # private!
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def get_balance(self):
+        return self.__balance
+```
+
+The `__balance` is private. You can't access it directly!
+
+```python
+account = BankAccount(1000)
+account.deposit(500)
+print(account.get_balance())  # 1500
+```
+
+---
+
+## 🔁 8. Polymorphism (Same word, different behavior)
+
+```python
+class Bird:
+    def speak(self):
+        print("Chirp!")
+
+class Duck(Bird):
+    def speak(self):
+        print("Quack!")
+
+class Parrot(Bird):
+    def speak(self):
+        print("Squawk!")
+```
+
+Now each bird has its own voice:
+
+```python
+for bird in [Duck(), Parrot(), Bird()]:
+    bird.speak()
+```
+
+🧸 Output:
+```
+Quack!  
+Squawk!  
+Chirp!
+```
+
+---
+
+## 🧠 Summary Table
+
+| Concept         | What it Means (Kid Version)                            | Python Example            |
+|----------------|---------------------------------------------------------|----------------------------|
+| Class           | A **blueprint** for things                             | `class Dog:`               |
+| Object          | A **real thing** made from a class                     | `dog1 = Dog()`             |
+| Attribute       | Something an object **has**                            | `self.name`                |
+| Method          | Something an object **does**                           | `def bark(self):`          |
+| Inheritance     | Child **inherits** from parent                         | `class Cat(Animal):`       |
+| Encapsulation   | Hide secret stuff inside a box                         | `self.__balance`           |
+| Polymorphism    | Same method, **different behaviors**                   | `def speak()` in many classes |
+
+---
+
+## 💡 Pro Tips for OOP
+
+- Use **PascalCase** for class names (`class MyCar`)
+- Always use `self` inside classes — it refers to the object
+- OOP is great for **games, web apps, cybersecurity tools**, and **everything real-world**
+
+---
+
+> 🎮 Think of classes as characters, attributes as stats, and methods as powers.  
+> Master OOP and you’ll code like a dev boss 💻👑  
+
+
+
+</details>
