@@ -585,6 +585,7 @@ Chirp!
 </details>
 
 
+
 <details>
   <summary>📂 File Handling + Modules & Packages Cheatsheet </summary> <br></br>
 
@@ -827,7 +828,5 @@ print(help(math.sqrt)) # ➜ Explains what sqrt does
 
 👑 Now you're not just a coder... you're a **Python Scrollkeeper** 🐍📜  
 Let me know what scroll to unlock next!
-
-
 
 </details>
