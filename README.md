@@ -2,8 +2,6 @@
   <img src="./visuals/Hello.gif" alt="Python Coding" width="600"/>
 </p> <br></br>
 
----
-
 
 <details>
   <summary>📂 Python Basics Cheatsheet </summary> <br></br>
